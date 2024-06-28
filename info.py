@@ -12,13 +12,14 @@ def is_enabled(value, default):
         return default
 
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1736204'))
-API_HASH = environ.get('API_HASH', '890d40e0f91a4de32dec2965444b2cbe')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6159823074:AAEUgLsUdv_WR2zn0C7yLJHhZ6aZx_L9S18')
+API_ID = int(environ.get('API_ID', '24314601'))
+API_HASH = environ.get('API_HASH', 'ede341e2d490a0fad5469866dedf8a95')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7084913738:AAFen9aOsSLvxshiMPg091DwjsN2tzBQC2g')
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Heroflix:Heroflix@heroflix.6sgi15o.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Ariana")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Ariana')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://13duddududdu:13duddududdu@cluster0.dvpxim9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "kc")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kc')
+
 
 DWLD = environ.get("DWLD", 'HeroFlixx/8')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -30,9 +31,9 @@ MELCOW_PIC = environ.get("MELCOW_PIC", "https://graph.org/file/75d4fcc66598ea1ef
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/2d68d2c0fbf9385d48d70.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1058015838').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1058015838 640617767').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001638006524').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1058015838').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1001521700370')
@@ -61,7 +62,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'heroflix')
 TUTORIAL = environ.get('TUTORIAL', 'HeroFlixx/8')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001652564383'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002245700012'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'herofeedbot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
