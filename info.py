@@ -16,9 +16,9 @@ API_ID = int(environ.get('API_ID', '24314601'))
 API_HASH = environ.get('API_HASH', 'ede341e2d490a0fad5469866dedf8a95')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7084913738:AAFen9aOsSLvxshiMPg091DwjsN2tzBQC2g')
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://13duddududdu:13duddududdu@cluster0.dvpxim9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "kc")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kc')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://13duddududdu:13duddududdu@cluster0.dvpxim9.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "kcp")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kcp')
 
 
 DWLD = environ.get("DWLD", 'HeroFlixx/8')
