@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '24314601'))
 API_HASH = environ.get('API_HASH', 'ede341e2d490a0fad5469866dedf8a95')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7084913738:AAFen9aOsSLvxshiMPg091DwjsN2tzBQC2g')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7084913738:AAEZyir5Y-PY6CKo2sMkX1T0LWhR8btOdJA')
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://13duddududdu:13duddududdu@cluster0.dvpxim9.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "database")
